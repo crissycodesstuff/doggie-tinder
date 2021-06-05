@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Littlest Vue</title>
+    <title>The Woofiest Vue</title>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
   <body>    
     <div id="app">      
-      Counter: {{ counter }}
-      
-      <p v-if="counter % 2 === 0">Even Number!</p>
-      <p v-else>Odd Number</p>      
+         
     </div>
     
     <script>
@@ -20,9 +17,6 @@
         counter: 0
       }
     });
-      
-    setInterval(() => {
-      app.counter++;
-    }, 300);      
+        
     </script>
   </body>
