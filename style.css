@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  background: url(https://cdn.glitch.me/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg)
+}
+
+.app {
+  display: grid;
+  grid-template-colums: 1fr 1fr;
+  grid-template-rows: auto 520px 120px 1fr;
+  grid-template-areas:
+    "title title"
+    "card card"
+    "next fav"
+    "favorites favorites";
+  height: 100vh;
+}
+
+.title {
+  grid-area: title;
+  margin: .5rem;
+  text-align: center;
+  color: tomato;
+}
+
+.card {
+  grid-area: card;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  outline: 10px solid black;
+}
