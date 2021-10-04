@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: arial, helvetica, sans-serif;
-  background: url(https://cdn.glitch.me/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg)
+  background: url(https://cdn.glitch.me/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg);
 }
 
 .app {
@@ -18,9 +18,9 @@ body {
 
 .title {
   grid-area: title;
-  margin: .5em;
+  margin: 0.5em;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   color: tomato;
 }
 
@@ -32,5 +32,34 @@ body {
   margin: 0 auto;
   border-radius: 15px;
   outline: 10px solid tomato;
-  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 20px 5px;
+  border: 8px solid tomato;
+  border-radius: 50%;
+  color: transparent;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.next {
+  grid-area: next;
+  background: url(
+      https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center;
+  background-size: 20px;
+  justify-self: end;
+}
+
+.next:hover {
+  background-color: #da553d;
+}
+
+.fav {
+  grid-area: fav;
+  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792);
+  background-size: 25px;
 }
