@@ -1,26 +1,29 @@
 body {
   margin: 0;
   font-family: arial, helvetica, sans-serif;
-  background: url(https://cdn.glitch.me/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg);
+  background: url(https://cdn.glitch.com/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg?v=1633185706738) #f2f2f2;
 }
 
 .app {
   display: grid;
-  grid-template-colums: 1fr 1fr;
-  grid-template-rows: auto 520px 120px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 520px 120px auto 1fr;
   grid-template-areas:
     "title title"
     "card card"
-    "next fav"
+    "nope fav"
+    "subtitle subtitle"
     "favorites favorites";
-  height: 100vh;
+   height: 100vh;
 }
 
 .title {
   grid-area: title;
-  margin: 0.5em;
+  margin: .5em;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
   text-align: center;
-  font-family: "Indie Flower", cursive;
   color: tomato;
 }
 
@@ -30,10 +33,11 @@ body {
   width: 100%;
   height: 500px;
   max-width: 400px;
+  object-fit: cover;
   margin: auto;
-  border-radius: 15px;
-  outline: 10px solid tomato;
-  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 10px solid tomato;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -44,28 +48,28 @@ button {
   border-radius: 50%;
   color: transparent;
   cursor: pointer;
-  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px 5px rgba(0,0,0,0.1)
 }
 
-.next {
-  grid-area: next;
-  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center;
+.nope {
+  grid-area: nope;
+  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center tomato;
   background-size: 20px;
   justify-self: end;
 }
 
-.next:hover {
+.nope:hover {
   background-color: #da553d;
 }
 
 .fav {
   grid-area: fav;
-  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792);
-  background-size: 25px;
+  background: url('https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792') no-repeat center tomato;
+  background-size: 26px;
 }
 
 .fav:hover {
-  background-color: #da553d;
+  background-color: #51c384;
 }
 
 h2 {
