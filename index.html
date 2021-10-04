@@ -2,23 +2,14 @@
 <html lang="en">
   <head>
     <title>Tinder for Dogs</title>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>    
-    <div id="app">      
-         
+  <body>
+    <div id="app">
+      <img alt="super cute dog" v-bind:src="currentDogUrl">
     </div>
-    
-    <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-      }
-    });
-        
-    </script>
   </body>
 </html>
