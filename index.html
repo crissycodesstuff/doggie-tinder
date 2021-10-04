@@ -9,7 +9,14 @@
   </head>
   <body>
     <div id="app">
-      <img alt="super cute dog" v-bind:src="currentDogUrl">
+      <img alt="super cute dog" v-bind:src="currentDogUrl" />
+      <button v-on:click="loadDog">Next</button>
+      <button v-on:click="addFav">Favorites</button>
+      <ul>
+        <li v-for="dog in favorites">
+        {{ dog }}
+        </li>
+      </ul>
     </div>
   </body>
 </html>
