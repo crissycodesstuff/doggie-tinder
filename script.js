@@ -7,14 +7,20 @@ const app = new Vue({
     favorites: []
   },
   methods: {
-    loadDog: async function () {
+    loadDog: async function() {
       const response = await fetch("https://dog.ceo/api/breeds/image/random");
       const asJson = await response.json();
       this.currentDogUrl = asJson.message;
       console.log(this.currentDogUrl);
     },
     addFav: function() {
-      this.favorites.push(this.currentDogurl);
+      if (!this.favorites.includes(this.currentDogUrl)) {
+        this.favorites.push(this.currentDogUrl);
+      }
+      this.loadDog();
+    },
+    removeFav: function(dog) {
+      this.favorites = this.favorites.filter(item => item !== dog);
     }
   },
   created() {

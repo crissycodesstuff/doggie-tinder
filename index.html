@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="app">
+      <h1 class="title">Tinder for Dogs
+        
+      </h1>
       <img alt="super cute dog" v-bind:src="currentDogUrl" />
       <button v-on:click="loadDog">Next</button>
       <button v-on:click="addFav">Favorites</button>
       <ul>
         <li v-for="dog in favorites">
-        {{ dog }}
+          <img alt="picture of favorite dog" v-bind:src="dog">
+          <button v-on:click="removeFav(dog)">Remove</button>
         </li>
       </ul>
     </div>
