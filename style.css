@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: arial, helvetica, sans-serif;
-  background: url(https://cdn.glitch.com/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg?v=1633185706738) #f2f2f2;
+  background: url('https://cdn.glitch.com/8c995165-2303-4457-a458-2b353ff3e9a1%2Fbg.jpg?v=1633185706738') #f2f2f2;
 }
 
 .app {
@@ -11,7 +11,7 @@ body {
   grid-template-areas:
     "title title"
     "card card"
-    "nope fav"
+    "next fav"
     "subtitle subtitle"
     "favorites favorites";
    height: 100vh;
@@ -51,20 +51,20 @@ button {
   box-shadow: 0 2px 10px 5px rgba(0,0,0,0.1)
 }
 
-.nope {
-  grid-area: nope;
-  background: url(https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612) no-repeat center tomato;
+.next {
+  grid-area: next;
+  background: url('https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Funchecked.png?1522935023612') no-repeat center tomato;
   background-size: 20px;
   justify-self: end;
 }
 
-.nope:hover {
+.next:hover {
   background-color: #da553d;
 }
 
 .fav {
   grid-area: fav;
-  background: url('https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792') no-repeat center tomato;
+  background: url('https://cdn.glitch.com/381dc777-702c-41b2-82aa-cac2e30d38de%2Fchecked%20(1).png?1522935023792') no-repeat center #63dd9a;
   background-size: 26px;
 }
 

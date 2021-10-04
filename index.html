@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Tinder for Dogs</title>
+    <title>Doggie Tinder</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script.js" defer></script>
@@ -14,16 +14,12 @@
     <div id="app" class="app">
       <h1 class="title">🐕 Doggie Tinder</h1>
       <img alt="super cute dog" v-bind:src="currentDogUrl" class="card" />
-      <button v-on:click="loadDog">Next</button>
-      <button v-on:click="addFav">Favorites</button>
+      <button v-on:click="loadDog" class="next">Next</button>
+      <button v-on:click="addFav" class="fav">Favorites</button>
       <h2>Favorites</h2>
       <ul class="favorites-list">
         <li v-for="dog in favorites" class="favorites-item">
-          <img
-            alt="picture of favorite dog"
-            v-bind:src="dog"
-            class="favorites-img"
-          />
+          <img alt="picture of favorite dog" v-bind:src="dog" class="favorites-img">
           <button v-on:click="removeFav(dog)" class="remove">Remove</button>
         </li>
       </ul>
