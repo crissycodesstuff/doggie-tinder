@@ -1,0 +1,21 @@
+{
+  "background_color": "#ffffff",
+  "description": "Fav the best doggos",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "DoggieTinder",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "DoggieTinder",
+  "start_url": "/",
+  "theme_color": "#ff6347",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "https://cdn.glitch.me/64fb79d2-9d55-48ed-9625-d6e1f1a900f4%2F889c9caa-3872-479a-ba09-7b6d48657f6d_android-chrome-512x512.png?v=1633634696576",
+      "sizes": "512x512",
+      "type": "image/png" 
+    }
+  ]
+}
